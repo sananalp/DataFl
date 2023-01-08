@@ -1,11 +1,10 @@
-using DataFl.BaseClasses;
-using System.Collections;
+using DataFl.ElementContainers;
 using System.Collections.Generic;
 using UnityEngine;
 
 namespace DataFl.PanelPatterns
 {
-  public class GeneralPanelPattern : MonoBehaviour
+  public class GeneralPattern : MonoBehaviour
   {
     [SerializeField] private Dictionary<string, ElementContainer> containers;
 
@@ -25,9 +24,12 @@ namespace DataFl.PanelPatterns
       }
     }
 
-    private void UpdateContainerView()
+    public void UpdateContainer<T>(List<T> list)
     {
+      foreach (T value in list)
+      {
 
+      }
     }
   }
 }

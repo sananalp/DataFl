@@ -10,6 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 83cca7b94debcc14a89830dece514f48, type: 3}
-  m_Name: GeneralPanelPattern
+  m_Name: TextbarContainerStyle
   m_EditorClassIdentifier: 
-  patternObject: {fileID: 6226618673834522534, guid: 95e6fdb2da594cb49a18c7b9fa3f207b, type: 3}
+  textbarElements:
+  - headerStyle:
+      color: {r: 0, g: 0, b: 0, a: 0}
+      size: 0
+      value: 
+    bodyStyle:
+      color: {r: 0, g: 0, b: 0, a: 0}
+      size: 0
