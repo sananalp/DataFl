@@ -29,7 +29,7 @@ namespace DataFl.UI.Controllers
 
     private void OnGeneralDataSendHandler(OnGeneralDataSendEvent eventDetails)
     {
-      view.UpdateView(eventDetails.DataValues);
+      view.GeneralPatternViewUpdate(eventDetails.DataValues);
     }
 
     #endregion

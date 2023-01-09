@@ -7,6 +7,8 @@ namespace DataFl.Styles
   public class TextbarHeaderStyle : TextStyle
   {
     [Header("Value parameters")]
-    [SerializeField] private string value;
+    [SerializeField] private string value = "Header";
+    
+    public string Value { get { return value; } }
   }
 }

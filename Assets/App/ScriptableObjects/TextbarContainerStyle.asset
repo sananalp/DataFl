@@ -12,11 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83cca7b94debcc14a89830dece514f48, type: 3}
   m_Name: TextbarContainerStyle
   m_EditorClassIdentifier: 
-  textbarElements:
-  - headerStyle:
-      color: {r: 0, g: 0, b: 0, a: 0}
-      size: 0
-      value: 
-    bodyStyle:
-      color: {r: 0, g: 0, b: 0, a: 0}
-      size: 0
+  textbarElementModels: []

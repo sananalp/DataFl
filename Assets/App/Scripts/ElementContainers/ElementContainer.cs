@@ -1,5 +1,5 @@
 using DataFl.Enums;
-using DataFl.ScriptableObjects;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace DataFl.ElementContainers
@@ -7,8 +7,19 @@ namespace DataFl.ElementContainers
   public class ElementContainer : MonoBehaviour
   {
     [SerializeField] private ContainerType containerType;
-    [SerializeField] private TextbarContainerStyle containerStyle;
+    [SerializeField] private Transform content;
 
     public ContainerType ContainerType { get { return containerType; } }
+    public Transform Content { get { return content; } }
+
+    public virtual void GenerateElements(List<string> list)
+    {
+
+    }
+
+    public virtual void GenerateElements(List<int> list)
+    {
+
+    }
   }
 }

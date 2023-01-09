@@ -8,14 +8,15 @@ namespace DataFl.UI.Views
   public class PumpPanelView : MonoBehaviour
   {
     [Header("Parameters")]
-    [SerializeField] private GeneralPattern panelPattern;
+    [SerializeField] private GeneralPattern generalPattern;
 
     [Header("Links")]
     [SerializeField] private PumpPanelViewController controller;
 
-    public void UpdateView(List<string> dataValues)
+    public void GeneralPatternViewUpdate(List<string> dataValues)
     {
-      panelPattern.UpdateContainer(dataValues);
+      generalPattern.SetElementContainers();
+      generalPattern.UpdateContainer(dataValues);
     }
   }
 }

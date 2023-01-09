@@ -107,7 +107,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3664452099043006362}
-  - {fileID: 832186707276834803}
+  - {fileID: 6875487072045747969}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -136,16 +136,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb2e9ec9a8c0484595f8a3639b49333, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1001 &6470845439580047873
+  containers: []
+--- !u!1001 &948898130420196083
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 6226618673834522553}
     m_Modifications:
+    - target: {fileID: 985975824477912770, guid: 05fd7c6a8a862544484052ff5fd3b668, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -110
+      objectReference: {fileID: 0}
     - target: {fileID: 5927171150905454065, guid: 05fd7c6a8a862544484052ff5fd3b668, type: 3}
       propertyPath: m_Name
-      value: TextbarContainer 1
+      value: TextbarContainer
       objectReference: {fileID: 0}
     - target: {fileID: 5927171150905454066, guid: 05fd7c6a8a862544484052ff5fd3b668, type: 3}
       propertyPath: m_Pivot.x
@@ -233,8 +238,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05fd7c6a8a862544484052ff5fd3b668, type: 3}
---- !u!224 &832186707276834803 stripped
+--- !u!224 &6875487072045747969 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5927171150905454066, guid: 05fd7c6a8a862544484052ff5fd3b668, type: 3}
-  m_PrefabInstance: {fileID: 6470845439580047873}
+  m_PrefabInstance: {fileID: 948898130420196083}
   m_PrefabAsset: {fileID: 0}

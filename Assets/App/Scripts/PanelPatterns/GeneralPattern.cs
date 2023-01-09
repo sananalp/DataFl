@@ -1,4 +1,5 @@
 using DataFl.ElementContainers;
+using DataFl.Enums;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,29 +7,32 @@ namespace DataFl.PanelPatterns
 {
   public class GeneralPattern : MonoBehaviour
   {
-    [SerializeField] private Dictionary<string, ElementContainer> containers;
+    [SerializeField] private List<ElementContainer> containers;
 
 
-    private void SetElementContainers()
+    public void SetElementContainers()
     {
-      containers = new Dictionary<string, ElementContainer>();
+      containers = new List<ElementContainer>();
 
-      for (int i = 0; i < transform.childCount; i++)
+      foreach(Transform child in transform)
       {
-        var containerObject = transform.GetChild(i);
-        var container = containerObject.GetComponent<ElementContainer>();
+        var container = child.GetComponent<ElementContainer>();
 
-        string containerKey = $"{container.ContainerType}{i}";
-        
-        containers.Add(containerKey, container);
+        if(container is ElementContainer)
+        {
+          containers.Add(container);
+        }
       }
     }
 
-    public void UpdateContainer<T>(List<T> list)
+    public void UpdateContainer(List<string> list)
     {
-      foreach (T value in list)
+      foreach (var container in containers)
       {
-
+        if (container.ContainerType == ContainerType.TextbarContainer)
+        {
+          container.GenerateElements(list);
+        }
       }
     }
   }

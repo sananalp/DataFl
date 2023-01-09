@@ -326,9 +326,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2096806587}
     m_Modifications:
+    - target: {fileID: 373457788775625394, guid: 95e6fdb2da594cb49a18c7b9fa3f207b, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 373457788775625394, guid: 95e6fdb2da594cb49a18c7b9fa3f207b, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 373457788775625394, guid: 95e6fdb2da594cb49a18c7b9fa3f207b, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 373457788775625394, guid: 95e6fdb2da594cb49a18c7b9fa3f207b, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6226618673834522534, guid: 95e6fdb2da594cb49a18c7b9fa3f207b, type: 3}
       propertyPath: m_Name
-      value: GeneralPanelPattern
+      value: GeneralPattern
       objectReference: {fileID: 0}
     - target: {fileID: 6226618673834522553, guid: 95e6fdb2da594cb49a18c7b9fa3f207b, type: 3}
       propertyPath: m_Pivot.x
@@ -432,7 +448,7 @@ GameObject:
   - component: {fileID: 1367951574}
   - component: {fileID: 1367951575}
   m_Layer: 5
-  m_Name: GeneralPanelViewController
+  m_Name: PumpPanelViewController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -472,6 +488,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   view: {fileID: 2096806588}
+--- !u!114 &1973939805 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8951291680554579520, guid: 95e6fdb2da594cb49a18c7b9fa3f207b, type: 3}
+  m_PrefabInstance: {fileID: 1095835344}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb2e9ec9a8c0484595f8a3639b49333, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2065550025
 GameObject:
   m_ObjectHideFlags: 0
@@ -584,7 +611,7 @@ GameObject:
   - component: {fileID: 2096806587}
   - component: {fileID: 2096806588}
   m_Layer: 5
-  m_Name: GeneralPanelView
+  m_Name: PumpPanelView
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -623,5 +650,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97145fae51b0a6042821e48520131065, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panelPattern: {fileID: 0}
+  generalPattern: {fileID: 1973939805}
   controller: {fileID: 1367951575}
