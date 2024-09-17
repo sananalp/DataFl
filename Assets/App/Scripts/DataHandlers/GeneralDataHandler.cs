@@ -1,6 +1,6 @@
 ﻿using DataFl.DataContainers;
 using DataFl.Events;
-using DynamicBox.EventManagement;
+using DataFl.EventManagement;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -19,7 +19,7 @@ namespace DataFl.DataHandlers
       List<string> dataCollection = new List<string>();
 
       string stationName = cloudData.docID;
-      string stationActivity = cloudData.activity ? "İşləyir" : "İşləmir";
+      string stationActivity = cloudData.activity ? "Active" : "Deactive";
       string stationCoordinates = $"{cloudData.coordinates[0]}, {cloudData.coordinates[1]}";
       string stationCoveredArea = $"{cloudData.coveredArea}";
 
